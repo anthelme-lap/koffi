@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05699.js"></script>
+   
+        
+    </head>
+    <body>   
+            
+                
+                   <nav>
+                       <input type="checkbox" id="check">
+                       <label for="toggle" class="checkbtn">
+                             &#9776
+                       </label>
+                      <label class="logo">DesignX</label>
+                      <ul>
+                        <li><a class="active" href="#">Acceuil</a></li>
+                        <li><a href="#">Formation</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                  </nav>
+            
+
+            <div>
+
+                <form  >
+                    <div class="color">
+                        <label for="">Nom</label><br><input type="text" id="name" required><br><br>
+                         <label for="">Prénom</label><br><input type="text" id="pseudo" required><br><br>
+                         <label for="">Adresse mail</label><br><input type="email" id="mail" required><br><br>
+                          <label for="">Numéro de Téléphone</label><br><input type="tel" name="tel" id="tel" required><br><br>
+                          <label for="">Mot de passe</label><br><input type="password" id="password" required>
+                          <button type="submit" id="inscription">Valider</button>
+                    </div>
+                </form>
+                            <p style="color: red;" id="erreur"></p>
+            </div>
+            <script >
+                    {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("name").value;
+  // If x is Not a Number or less than one or greater than 10
+  if (x == "") {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("erreur").innerHTML = text;
+}
+
+{
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("pseudo").value;
+  // If x is Not a Number or less than one or greater than 10
+  if (x =="") {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("erreur").innerHTML = text;
+}
+
+
+
+            </script>
+    </body>
+</html>
