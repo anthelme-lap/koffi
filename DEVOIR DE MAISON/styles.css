@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+nav li 
+{
+    
+    list-style: none;
+    display: inline;
+    padding-left: 70px;
+    
+    
+}
+a
+{
+    padding-right: 15px;
+   
+}
+header
+{
+    background: url("images/hero-banner-homepage.image.large_2x.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    
+}
+form
+{
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    font-size: 30px;
+}
+input
+{
+    width: 500px;
+    height: 40px;
+    margin-left: 100px;
+    
+}
+.AAAA
+{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 300px;
+
+}
+.BBB
+{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 200px;
+}
+.ggg
+{
+    position: relative;
+    bottom: 350px;
+    left: 200px;
+    font-size: 25px;
+}
+.troisImage
+{
+    display: flex;
+    justify-content:space-around;
+    margin-left: 250px;
+    padding-right: 20px;
+}
+.MMM
+{
+    position: relative;
+    bottom: 350px;
+    left: 200px;
+    color: white;
+}
+.CCC
+{
+    display: flex;
+    margin-left: 230px;
+    margin-top: 10px;
+}
+.WWW
+{
+    display: flex;
+    margin-left: 200px;
+    
+}
+.cent
+{
+    text-align: center;
+    
+}
+.qqq
+{
+    display: flex;
+    
+    margin-left: 200px;
+}
+.ZZZ
+{
+    text-align: center;
+}
+.CXS a
+{
+    
+
+    text-decoration: none;
+
+}
