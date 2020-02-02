@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="24" viewBox="0 0 62 24">
+  <defs>
+    <radialGradient id="tfx-colored-a" cx="45.028%" cy="0%" r="88.623%" fx="45.028%" fy="0%" gradientTransform="matrix(0 1 -.4924 0 .45 -.45)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="99.203%" stop-color="#FFF" stop-opacity="0"/>
+    </radialGradient>
+    <path id="tfx-colored-b" d="M0,0 L0,18 C0,18 24.7375328,6.85183171 62,3.69541851 L62,0 L0,0"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#FF4800" points="0 24 62 24 62 0 0 0"/>
+    <path fill="#FFF" d="M37.9716413,9.50848571 L30.943021,9.50848571 L30.943021,10.6678857 L35.5799532,10.6678857 L35.5799532,16.1761488 L30.943021,16.1761488 L30.943021,20.058625 L24,20.058625 L24,4 L37.9716413,4 L37.9716413,9.50848571 Z M5,9.50848571 L5,4 L21.4753024,4 L21.4753024,9.50848571 L16.709046,9.50848571 L16.709046,20.058625 L9.76625635,20.058625 L9.76625635,9.50848571 L5,9.50848571 Z M56.8469718,20.0584024 L48.716204,20.0584024 L39,4 L47.1307679,4 L56.8469718,20.0584024 Z M47.7754266,20.0328952 L38.4,20.0328952 L43.087829,12.3 L47.7754266,20.0328952 Z M48,4 L57.3754266,4 L52.6880603,11.7322274 L48,4 Z"/>
+    <use fill="url(#tfx-colored-a)" fill-opacity=".7" opacity=".6" xlink:href="#tfx-colored-b"/>
+  </g>
+</svg>

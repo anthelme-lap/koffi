@@ -1,0 +1,334 @@
+/**
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: "Open Sans",sans-serif;
+}
+header
+{
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    right: 0px;
+    background-color: rgba(0,0,0,.45);
+    width: 100%;
+    height: 64px;
+}
+
+.premierdiv
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    height: 64px;
+    
+}
+.divImageTf1 img
+{
+    padding-bottom: 10px;
+}
+.deuxiemediv
+{
+    display: flex;
+    width: 45%;
+    height: 35px;
+    margin-top: 22px;
+    margin-bottom:20px;
+    line-height: 20px; 
+    padding-bottom: 20px;
+    
+}
+.menu
+{
+
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    margin-right: 60px;
+    width: 403px;
+    height: 64px;
+        padding-bottom: 30px;
+}
+
+
+.GranddivDeRecher
+{
+    display: flex;
+    width: 583.5px;
+    height: 64px;
+    
+    margin-left: 20px;
+    
+}
+.recherche input
+{
+    margin-left: 90px;
+    width: 271px;
+    border: none;
+    
+}
+input
+{
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    
+}
+input::placeholder
+{
+    color: white;
+}
+.loupe
+{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.btn button
+{
+    border-radius: 20px;
+    background: #0a78e3;
+    color: #fff;
+    font-weight: 700;
+    border-color: transparent;
+    width: 160px;
+    height: 38px;
+    margin-bottom: 20px;
+}
+nav ul 
+{
+    margin-left: 250px;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+/*nav ul li
+{
+    display: inline;
+    text-decoration: none;   
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+nav ul li a
+{
+    color: #fff;
+    line-height: 60px;
+    text-decoration: none;
+    font-size: 20px;
+}
+*/
+.divcover
+{
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+.parent2
+{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 100px
+}
+.enfant2
+{
+    
+     display: flex; 
+     flex-flow: row-nowrap;
+     justify-content: space-between;
+}
+.enfant2 article
+{
+    margin-right: 40px
+    width: 23%;
+    height: 50px;
+    
+}
+
+.parent3
+{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 400px
+}
+.enfant3
+{
+    
+     display: flex; 
+     flex-flow: row-nowrap;
+     justify-content: space-between;
+}
+.enfant3 article
+{
+    margin-right: 40px
+    width: 23%;
+    height: 50px;
+    border-radius: 24px;
+    
+}
+
+.parent4
+{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 300px
+}
+.enfant4
+{
+    
+     display: flex; 
+     flex-flow: row-nowrap;
+     justify-content: space-between;
+}
+.enfant4 article
+{
+    margin-right: 40px
+    width: 23%;
+    height: 50px;
+    
+    
+}
+ .replay:after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(18px);
+    transition: width .4s;
+ }
+
+ .replay:hover:after
+ {
+    width: 100%;
+    transition:width .4s;
+
+ }
+
+.parent5
+{
+   
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    margin-top: 200px;
+    padding-bottom: 200px;
+}
+.enfant5
+{
+    
+     display: flex; 
+     flex-flow: row-nowrap;
+     justify-content: space-between;
+}
+.enfant5 article
+{
+    margin-right: 40px
+    width: 30%;
+    height: 50px;
+}
+.images5:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.images5 {
+    border-radius: 8px;
+    transform: scale(1.0);
+}
+
+.nav1 ul 
+{
+    margin-left: 80px;
+}
+.nav1 ul li a
+{
+    display: block;
+    list-style: none;
+    color: rgb(169, 171, 179);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+.navfooter ul
+{
+    margin-left: 85px;
+    margin-right: 90px;
+}
+.couleurFooter {
+    color: #7e7e7e;
+    line-height: 40px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.Retrouveznous
+{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000a12;
+    margin-bottom: 20px;
+}
+.divfooterparent
+{
+    background: #f5f5f5;
+    padding-top: 20px;
+}
+.lesliensfooter 
+{
+    color: black;
+    
+    border-right: 1px ;
+    margin-left: 260px;
+    font-size: 12px;
+}
+.lesliensfooter a
+{
+    border-right: 1px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.imagefbtwiinsta
+{
+    margin-left: 600px;
+}
+.titre
+{
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.titre1
+{
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.petiteImage
+{
+    cursor: pointer;
+}
+*/

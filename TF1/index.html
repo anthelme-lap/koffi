@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script type="script.js"></script>
+
+    <style type="text/css">
+      *
+    {
+      margin: 0;
+      padding: 0;
+    }
+    .tete{
+      position: fixed;
+      z-index: 10;
+      padding-right: 80px;
+      width: 100%;
+      height: 64px;
+
+      background-color: rgba(0,0,0,.45);
+    }
+
+    .myTf1
+    {
+      margin-left: 80px;
+      padding-top: 10px;
+    }
+
+    nav ul {
+      position: absolute;
+      top:20px;
+      left: 236px
+       }
+
+       nav ul li{
+        display: inline;
+        list-style: none;
+       }
+
+
+       nav a {
+        text-decoration: none;
+        margin-right: 50px;
+        color: white;
+        font-size: 16px;
+        font-family: "Open Sans",sans-serif;
+        font-weight: bold;
+       }
+       a:hover
+       {
+        text-decoration: none;
+        padding: 23px;
+        background-color: gray;
+        color: white;
+        transition: .8s;
+       }
+       .barreRecherche{
+        float: right;
+        position: relative;
+        bottom: 35px;
+        right: 80px;
+       }
+       input{
+        background-color: transparent;
+        color: white;
+         outline: none;
+        border: none;
+        width: 271px;
+       }
+       input::placeholder{
+        color: white;
+        font-size: 14px;
+        font-family: "Open Sans",sans-serif;
+       }
+       .bouton{
+        margin-left: 30px;
+        border-radius: 20px;
+        background: #0a78e3;
+         color: #fff;
+         font-weight: 700;
+        border-color: transparent;
+         width: 160px;
+         height: 38px;
+         margin-bottom: 20px;
+         cursor: pointer;
+       }
+    </style>
+    </head>
+   
+    <body>
+        <!-- 
+        <header class="gran"> 
+            <div class="premierdiv">
+               <!-- <div class="deuxiemediv"> -->
+                <!-- <div class="divImageTf1"><img  src="image/jip.svg" width="113.28px" height="42px" alt=""></div>
+                    
+                    <div class="menu">
+                         <!-- <a style="text-decoration: none; margin-left: 40px;" class="aa" href="#">
+                         <div style="margin-right:60px; color: white; " class="replay"> Replay</div>
+                         </a>
+                         <a style="text-decoration: none" class="aa" href="#">
+                         <div style="margin-right:60px; color: white;" class="replay">Direct</div>
+                         </a>
+                         <a style="text-decoration: none; color: white;" class="aa" href="#">
+                         <div  class="maListe">Ma liste</div>
+                         </a> -->
+                       <!--   <nav>
+                           <ul>
+                             <li><a href="#">Replay</a></li>
+                             <li><a href="#">Direct</a></li>
+                             <li><a href="#">Ma liste</a></li>
+                           </ul>
+                         </nav>
+                    </div>
+                </div>
+                <div class="GranddivDeRecher">
+                    <div style="margin-top: 14px; color: white;"  class="recherche">
+                        <input type="text" width="271px" height="21px" placeholder="Rechercher un programme, une vidéo...">
+                    </div>
+                    <div style="margin-top: 14px;" class="loupe"><img src="image/search.png" style="color:white;" width="24px" height="24px" alt=""></div>
+                    <div class="btn">
+                        <button>Se connecter</button>
+                    </div>
+                </div >
+            </div>
+        </header>  -->
+        <header class="tete">
+                    <div>
+             <img src="image/jip.svg" class="myTf1" width="115.28px" height="45px">
+    </div>
+    <div class="LesLiens">
+      <nav>
+        <ul>
+          <li><a href="#">Replay</a></li>
+          <li><a href="#">Direct</a></li>
+          <li><a href="#">Ma liste</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="barreRecherche">
+      <input type="search"  placeholder="Rechercher un programme, une vidéo...">
+      <img src="image/search.png" width="24px" style="" height="24px">
+       <button class="bouton" >Se connecter</button>
+    </div>
+    
+  </header>
+         <div>
+            <img src="image/votre.png" style=" z-index: 999; position:fixed; ; top: 200px; left:1320px " width="35px" height="100px">
+         </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="image/cover_1.jpg" width="100%" height="500px" alt="First slide">
+                
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="image/cover_2.jpg" width="100%" height="500px" alt="Second slide">
+                
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="image/cover_3.jpg" width="100%" height="500px" alt="Third slide">
+              </div>
+
+            </div>
+            <div class="divcover">
+                
+            </div>
+           
+          </div>
+
+          <div class="parent" style=" margin-left: auto; margin-right: auto; width: 80%;">
+              <div style="font-size: 30px; margin-top: 50px; font-family: 'open sans', sans-serif;">En direct sur nos chaînes</div>
+                    <div class="enfant" style=" display: flex; flex-flow: row-nowrap; justify-content: space-between;">
+                        <article>
+                            <img  src="700/petite.jpg" class="images5" width="200px" height="200px" alt="" ><br><br>
+                           <img src="image/tfx.jpg" width="51px" class="petiteImage" style="margin-left: 70px" height="26px"    alt=""><br>
+                           <div class="titre1">Castle</div>
+                        </article>
+                        <article>
+                            <img src="700/petite1.jpg" width="200px" height="200px" class="images5" alt=""><br><br>
+                         <img src="image/tci.jpg" width="51px" class="petiteImage" style="margin-left: 70px" height="26px"  alt=""><br>
+                         <div class="titre1">Diversion</div>
+                        </article>
+                        <article>
+                            <img src="700/petite5.jpg" width="200px" height="200px" class="images5" alt=""><br><br>
+                           <img src="image/tf1.jpg" width="51px" style="margin-left: 70px" class="petiteImage" height="26px"   alt=""><br>
+                           <div class="titre1">Castle</div>
+                        </article>
+                        <article >
+                            <img src="700/dse.jpg" width="200px" height="200px" class="images5" alt=""><br><br>
+                            <img src="image/tmc2.jpg" style="margin-left: 70px;   "width="51px class="petiteImage" height="26px" alt=""><br>
+                            <div class="titre1">Castle</div>
+                           </article>
+                           
+                        <article>
+                            <img src="700/pettttttt.jpg" width="200px" height="200px" class="images5"  alt=""><br><br>
+                           <img src="image/tfxseri.jpg" style="margin-left: 70px" width="51px" class="petiteImage" height="26px" alt=""><br>
+                           <div class="titre1">Castle</div>
+                        </article>  
+                    </div>   
+          </div>
+
+                    <div class="parent2">
+                       <div style="font-size: 30px; font-family: 'open sans', sans-serif;">Vidéo recommandée<br></div> <br>
+                        <div class="enfant2">
+                            <article >
+                                <img src="videoRecommande/video1.jpg" width="280px" height="180px" class="images5"  alt="">
+                           </article>
+                            <article>
+                                <img src="videoRecommande/video2.jpg" width="280px" height="180px" class="images5" alt="">
+                            </article>
+                            <article>
+                                <img src="videoRecommande/video3.jpg" width="280px" height="180px" class="images5" alt="">
+                            </article>
+                            <article >
+                            <img src="videoRecommande/video4.jpg" width="280px" height="180px" class="images5" alt="">
+                           </article>
+                        </div>  
+                    </div>
+
+                     <div class="parent3">
+                        <div style="font-size: 30px; font-family: 'open sans', sans-serif;">Tendance du moment</div><br>
+                        <div class="enfant3">
+                            <article >
+                                <img src="tendanceduMmoent/aaa.jpg" width="200px" height="266px" class="images5" alt="">
+                                <div class="titre">New Amsterdam</div>
+                           </article>
+                            <article>
+                                <img src="tendanceduMmoent/bb.jpg" width="200px" height="266px" class="images5" alt="">
+                                <div class="titre">La Villa des coeurs <br>brisés</div>
+                            </article>
+                            <article>
+                                <img src="tendanceduMmoent/ff.jpg" width="200px" height="266px" class="images5" alt="">
+                                <div class="titre">Maman Celesbre</div>
+                            </article>
+                            <article>
+                                <img src="tendanceduMmoent/lon.jpg" width="200px" height="266px" class="images5" alt="">
+                                <div class="titre">Quotidien</div>
+                            </article>
+                            <article >
+                            <img src="tendanceduMmoent/hh.jpg" width="200px" height="266px" class="images5" alt="">
+                            <div class="titre">Les feux de l'amour</div>
+                           </article>
+                        </div>
+                        
+                    </div>
+
+                     <div class="parent4">
+                        <div style="font-size: 30px; font-family: 'open sans', sans-serif;">Selection par genre</div><br>
+                        <div class="enfant4">
+                            <article >
+                                <img src="selectionpargenre/info.jpg" width="280px" style="opacity: .9"  height="180px" class="images5" alt=""><br>
+                                <h3 style="font-weight: bold; position: relative; bottom:100px; left:10px; color: white;cursor: pointer;">Info, Mag & Sport</h3>
+                           </article>
+                            <article>
+                                <img src="selectionpargenre/jeune.jpg" width="280px" style="opacity: .9"  height="180px" class="images5" alt="">
+                                <h3 style="font-weight: bold; position: relative; bottom:100px; left:90px; color: white;cursor: pointer;">Jeunesse</h3>
+                            </article>
+                            <article>
+                                <img src="selectionpargenre/divertissement.jpg" width="280px" style="opacity: .9"   class="images5"class="images5" height="180px" alt="">
+                                <h3 style="font-weight: bold; position: relative; bottom:100px; left:27px; color: white;cursor: pointer">Divertissements</h3>
+                            </article>
+                            <article>
+                            <img src="selectionpargenre/ddd.jpg" width="280px" height="180px" class="images5" style="opacity: .9" >
+                            <h3 style="font-weight: bold; position: relative; bottom:100px; left:30px; color: white;cursor: pointer;">Séries & Fictions</h3>
+                           </article>
+                        </div>
+                        
+                    </div>
+
+                     <div class="parent5">
+                        <div style="font-size: 30px; font-family: 'open sans', sans-serif;">Nos chaînes</div><br>
+                        <div class="enfant5">
+                            <article style="margin-left: 30px;">
+                                <img src="noschaines/LCI.jpg" width="200px" height="196px" class="images5">
+                           </article>
+                            <article>
+                                <img src="noschaines/TCM.jpg" width="200px" height="196px" class="images5">
+                            </article>
+                            <article>
+                                <img src="noschaines/TFI.jpg" width="200px" height="196px" class="images5">
+                            </article>
+                            <article>
+                                <img src="noschaines/tf.jpg" width="200px" height="196px" class="images5">
+                            </article>
+                            <article >
+                            <img src="noschaines/TFX.jpg" width="200px" height="196px" class="images5">
+                           </article>
+                        </div>
+                    </div>
+
+                    <footer style="position: relative; z-index: 2; padding-top: 20px;">
+                      <hr><nav class="nav1">
+                        <ul>
+                          <li><a href="#">Accueil</a></li>
+                        </ul>
+                      </nav><hr><br><br>
+                      <nav class="nav2">
+                        <div style=" margin-left: auto; margin-right: auto;" >
+                          <nav class="navfooter" >
+                            <ul style="display: flex; justify-content: space-between; flex-flow: row-nowrap;">
+                             <div>
+                              <li><a style="color: black; font-weight: 700; font-size: 16px; text-decoration: none"  href="#">MYTF1</a><br></li>
+                              <li><a class="couleurFooter" href="#">Programmes</a><br></li>
+                              <li><a class="couleurFooter" href="#">News</a><br></li>
+                              <li><a class="couleurFooter" href="#">Replay</a><br></li>
+                              <li><a class="couleurFooter" href="#">Vidéos</a><br></li>
+                              <li><a class="couleurFooter" href="#">LCI</a><br></li>
+                            </div> 
+
+                            <div>
+                              <li><a style="color: black; font-weight: 700; font-size: 16px; text-decoration: none;"  href="#">TF1</a><br></li>
+                              <li><a class="couleurFooter" href="#">Programmes TF1</a><br></li>
+                              <li><a class="couleurFooter" href="#">News TF1</a><br></li>
+                              <li><a class="couleurFooter" href="#">Replay TF1</a><br></li>
+                              <li><a class="couleurFooter" href="#">Vidéos TF1</a><br></li>
+                              <li><a class="couleurFooter" href="#">Mask Singer</a><br></li>
+                              <li><a class="couleurFooter" href="#">Danse avec les stars</a><br></li>
+                              <li><a class="couleurFooter" href="#">La bazar de la charité</a><br></li>
+                              <li><a class="couleurFooter" href="#">Good Doctor</a><br></li>
+                              <li><a class="couleurFooter" href="#">Demain nous appartient</a><br></li>
+                              <li><a class="couleurFooter" href="#">Téléfoot</a><br></li>
+                            </div> 
+
+                            <div>
+                              <li><a style="color: black; font-weight: 700; font-size: 16px; text-decoration: none;" href="#">TMC</a><br></li>
+                              <li><a class="couleurFooter" href="#">Programmes TMC</a><br></li>
+                              <li><a class="couleurFooter" href="#">News TMC</a><br></li>
+                              <li><a class="couleurFooter" href="#">Replay TMC</a><br></li>
+                              <li><a class="couleurFooter" href="#">Vidéos TMC</a><br></li>
+                              <li><a class="couleurFooter" href="#">Quotidien</a><br></li>
+                              <li><a class="couleurFooter" href="#">Palmashow</a><br></li>
+                              <li><a class="couleurFooter" href="#">Les Mystères de l'Amour</a><br></li>
+                            </div> 
+
+                            <div>
+                              <li><a style="color: black; font-weight: 700; font-size: 16px;text-decoration: none;"  href="#">TFX</a><br></li>
+                              <li><a class="couleurFooter" href="#">Programmes TFX</a><br></li>
+                              <li><a class="couleurFooter" href="#">News TFX</a><br></li>
+                              <li><a class="couleurFooter" href="#">Replay TFX</a><br></li>
+                              <li><a class="couleurFooter" href="#">Vidéos TFX</a><br></li>
+                              <li><a class="couleurFooter" href="#">La villa des cœurs brisés</a><br></li>
+                              <li><a class="couleurFooter" href="#">La batailles des couples</a><br></li>
+                              <li><a class="couleurFooter" href="#">Les Frères Scott</a><br></li>
+                            </div> 
+
+                            <div>
+                              <li><a style="color: black; font-weight: 700; font-size: 16px; text-decoration: none;" href="#">TF1 Séries Films</a><br></li>
+                              <li><a class="couleurFooter" href="#">Programmes TF1 Séries Films</a><br></li>
+                              <li><a class="couleurFooter" href="#">News TF1 Séries Films</a><br></li>
+                              <li><a class="couleurFooter" href="#">Replay TF1 Séries Films</a><br></li>
+                              <li><a class="couleurFooter" href="#">Vidéos TF1 Séries Films</a><br></li>
+                              <li><a class="couleurFooter" href="#">S.W.A.T</a><br></li>
+                              <li><a class="couleurFooter" href="#">Grey's Anatomy</a><br></li>
+                              <li><a class="couleurFooter" href="#">La vengeance de Veronica</a><br></li>
+                              <li><a class="couleurFooter" href="#">Paw Patrol : La Pat' Patrouille</a><br></li>
+                              <li><a class="couleurFooter" href="#">Miraculous</a><br></li>
+                            </div> 
+                            </ul>
+                          </nav>
+                        </div>
+                      </nav>
+                      <span class="Retrouveznous">
+                        Retrouvez-nous en téléchargeant l'application MYTF1
+                      </span>
+                      <div style="display: flex; margin-left: 530px; margin-right: 25px">
+                        <div  >
+                          <a href="#" "><img src="image/apple.png" style="margin-right: 20px" width="127px" height="40px"></a>
+                        </div>
+                        <div>
+                          <a href="#"><img src="image/google.png" width="127px" height="40px"></a>
+                        </div>
+                      </div><br><br>
+                      
+
+                      <div class="divfooterparent">
+                        <div class="divfooterenfant">
+                          <span style="margin: 550px; font-weight: bold;">TF1 Copyright © 2019 e-TF1</span>
+                        </div><br>
+                        <div class="lesliensfooter">
+                          <a style="text-decoration: none; color: #01081f;" href="#">Accessibilité</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">Mentions légales</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">Espace de confiance</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">Conditions Générales d'Utilisation</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">Politique de protection des données</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">Politique cookies</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">Paramétrez vos choix</a><br><br>
+                          <a style="text-decoration: none; color: #01081f;" href="#">Gagnants / Règlements / Remboursement des jeux TV</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">Groupe TF1</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">Copyrights</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">Annonceurs</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">Nous contacter</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">MYTF1VOD</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">TFOUMAX</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">TF1 & Vous</a>
+                          <a style="text-decoration: none; color: #01081f;" href="#">Respect Zone</a>
+                        </div><br>
+                        <div>
+                          <div class="imagefbtwiinsta">
+                             <a href="#"><img style="margin-right: 20px" src="image/fb.png" width="32" height="32"></a>
+                             <a href="#"><img style="margin-right: 20px" src="image/twi.png" width="32" height="32"></a>
+                             <a href="#"><img src="image/insta.png" width="32" height="32"></a>
+                          </div><br><br>
+                        </div>
+                      </div>
+                    </footer>
+                    
+    </body>
+</html>

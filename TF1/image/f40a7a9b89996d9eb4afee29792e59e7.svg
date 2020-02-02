@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="24" viewBox="0 0 62 24">
+  <defs>
+    <linearGradient id="tf1-colored-a" x1="0%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#0C1AA8"/>
+      <stop offset="23.9%" stop-color="#002DC0"/>
+      <stop offset="64.4%" stop-color="#840339"/>
+      <stop offset="100%" stop-color="#D00606"/>
+    </linearGradient>
+    <radialGradient id="tf1-colored-b" cx="45.028%" cy="0%" r="87.917%" fx="45.028%" fy="0%" gradientTransform="matrix(0 1 -.49882 0 .45 -.45)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <polyline fill="url(#tf1-colored-a)" fill-rule="nonzero" points="62 0 31.029 0 30.971 0 0 0 0 24 30.971 24 31.029 24 62 24 62 0"/>
+    <path fill="url(#tf1-colored-b)" fill-opacity=".7" d="M-1.25055521e-12,-2.30926389e-14 L-1.25055521e-12,18.2528524 C-1.25055521e-12,18.2528524 24.7626546,6.94808185 62.062963,3.74732937 L62.062963,-2.30926389e-14 L-1.25055521e-12,-2.30926389e-14" opacity=".6"/>
+    <polygon fill="#FFF" points="5.5 4.131 5.5 9.586 9.116 9.586 9.116 19.93 16.037 19.93 16.037 9.586 19.653 9.586 19.653 4.131"/>
+    <polygon fill="#FFF" points="28.198 4.131 28.198 19.93 35.119 19.93 35.119 14.956 39.37 14.956 39.37 10.999 35.119 10.999 35.119 8.088 41.064 8.088 41.064 4.131"/>
+    <polygon fill="#FFF" points="56.432 4.05 49.257 6.085 49.257 19.93 56.432 19.93"/>
+  </g>
+</svg>
